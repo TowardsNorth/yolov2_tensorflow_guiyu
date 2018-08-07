@@ -6,12 +6,11 @@
 
 1	数据集的准备： ① 索引文件trainval.txt: 存放的是训练图片的名称
                   ![](images/1.jpg)
-                 
-                  ② 图片文件：
-                  ![](images/2.jpg)
-                 ③ 标签文件xml:
-                  ![](images/3.jpg)
-
+                图片文件：
+                ![](images/2.jpg)
+                标注文件：
+                ![](images/3.jpg)
+                
 2	网络的设计（分类训练与检测训练）
 
    ![](images/11.jpg)
