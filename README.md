@@ -13,7 +13,7 @@
 
 2	网络的设计（分类训练与检测训练）
 
-   ![](yolov2_tensorflow_guiyu/images/11.jpg)
+   ![](images/11.jpg)
    
    Training for classification: 在上图所示的网络中，先在标准ImageNet 1000 class分类数据集上做160 epochs的预训练，此时网络输入大小为(224 * 224), 然后调整输入图片的大小，变成 (448 * 448), 再用这个分类网络在ImageNet进行fine-tuning, 论文中是这样描述的：（We train the network on the standard ImageNet 1000 class classification dataset for 160 epochs using stochastic gradient descent with a starting learning rate of 0:1, polynomial rate decay with a power of 4, weight decay of 0:0005 and momentum of 0:9 using the Darknet neural network framework [13]. During training we use standard data augmentation tricks including random crops, rotations, and hue, saturation, and exposure shifts. As discussed above, after our initial training on images at 224 × 224 we fine tune our network at a larger size, 448. For this fine tuning we train with the above parameters but for only 10 epochs and starting at a learning rate of 10-3. At this higher resolution our network achieves a top-1 accuracy of 76:5% and a top-5 accuracy of 93:3%.）
 
